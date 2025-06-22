@@ -10,6 +10,8 @@
 
 The CTA Bus-O-Tron shows how far away the next bus is. I have a MQTT server that publishes arrival times pulled from the CTA API (multiple devices and Home Assistant use the info)
 
+I wrote this to publish arrival ETAs to MQTT (https://github.com/leibert/ctaMQTT). This also has code to interface directly with the CTA APIs. I have a Mosquitto MQTT broker running as a home assistant add-on (https://www.home-assistant.io/integrations/mqtt/), but there's a number of MQTT brokers you can quickly spin-up
+
 Code commenting and most of this readme AI generated, errors are likely present.
 
 I care about a few routes near where I live in Lakeview Chicago. For rail you can get the stop IDs from CTA's documentation (https://www.transitchicago.com/developers/ttdocs/). For bus stop IDs, you can usually find the stop ID on the physical sign or you can find it on Google Maps, by clicking the Bus Stop, and the ID will be towards the top.
