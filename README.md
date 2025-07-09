@@ -7,6 +7,7 @@
 [![Language: C++](https://img.shields.io/badge/Language-C%2B%2B-red.svg)](https://isocpp.org/)
 
 ## 🎯 Overview
+<img src="https://github.com/user-attachments/assets/aa1c3296-6486-426b-979a-3865226816d1" width=600 height=400>
 
 The CTA Bus-O-Tron shows how far away the next bus is. I have a MQTT server that publishes arrival times pulled from the CTA API (multiple devices and Home Assistant use the info)
 
@@ -15,6 +16,8 @@ I wrote this to publish arrival ETAs to MQTT (https://github.com/leibert/ctaMQTT
 Code commenting and most of this readme AI generated, errors are likely present.
 
 I care about a few routes near where I live in Lakeview Chicago. For rail you can get the stop IDs from CTA's documentation (https://www.transitchicago.com/developers/ttdocs/). For bus stop IDs, you can usually find the stop ID on the physical sign or you can find it on Google Maps, by clicking the Bus Stop, and the ID will be towards the top.
+
+![VID_20250703_155705808-ezgif com-optimize](https://github.com/user-attachments/assets/94b25fa6-35cb-4ec7-97cc-22b5d4de328f)
 
 The box has mechanical relays that trigger in parallel with TO-220 FETs solely to make a fun mechanical sound (but to be silent at night). It is subscribed to an MQTT topic to turn the mechanical relays ON/OFF and a topic to turn off the Lights/Relays entirely.
 
